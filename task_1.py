@@ -19,6 +19,9 @@ def get_days_from_today(date_str: str) -> int:
     except ValueError:
         print(f"'{date_str}' - does not match format 'YYYY-MM-DD'")
         return None
+    except Exception as e:
+        print(e)
+        return None
     else:
         return days_left
 
