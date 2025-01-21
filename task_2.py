@@ -12,7 +12,9 @@ def get_numbers_ticket(min_num: int, max_num: int, quantity: int) -> list:
     Output:
     * List with QUANTITY unique integers from MIN to MAX
     '''
+
     random_list = []
+
     while len(random_list) < quantity:
         random_num = int(random.uniform(min_num, max_num))
         if random_num in random_list:

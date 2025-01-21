@@ -10,7 +10,9 @@ def normalize_phone(phone_number) -> str:
     Output:
     * the string of the phone number or None 
     '''
+
     phone_number = re.sub(r'\D+', '', phone_number)
+
     if phone_number != '':
         if not phone_number.startswith('380'): 
             if phone_number.startswith('0'):
