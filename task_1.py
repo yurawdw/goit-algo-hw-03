@@ -10,8 +10,10 @@ def get_days_from_today(date_str: str) -> int:
     Output:
     * Count of the date to the DATE_STR (integer)
     '''
-    pass
+    days_left = (datetime.strptime(date_str, '%Y-%m-%d') - datetime.now()).days
+    return days_left
 
 if __name__ == "__main__":
-    print(get_days_from_today("2021-10-09"))
+    print(get_days_from_today("2025-02-24"))
+    print(get_days_from_today("2022-02-24"))
 
