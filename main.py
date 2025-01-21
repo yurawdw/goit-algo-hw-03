@@ -1,6 +1,6 @@
-from task-1 import get_days_from_today
-from task-2 import get_numbers_ticket
-from task-3 import normalize_phone
+from task_1 import get_days_from_today
+from task_2 import get_numbers_ticket
+from task_3 import normalize_phone
 
 if __name__ == "__main__":
     print(get_days_from_today("2021-10-09"))
