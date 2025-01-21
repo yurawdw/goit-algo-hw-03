@@ -28,3 +28,6 @@ if __name__ == "__main__":
 
     sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
     print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)    
+    
+    print('*' * 50)
+    print('')
